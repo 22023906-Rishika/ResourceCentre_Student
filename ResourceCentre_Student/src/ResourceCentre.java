@@ -197,7 +197,15 @@ public class ResourceCentre {
 	
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
-		// write your code here
+				Chromebook cb =null;
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		int OS = Helper.readInt("Enter othe OS > ");
+
+		Camcorder cc= new Camcorder(tag, description, zoom);
+		return cb;
+		
+	}
 
 		return cb;
 		
